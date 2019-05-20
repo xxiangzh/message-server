@@ -2,6 +2,7 @@ package com.xzh.messageprovider.sender.impl;
 
 import com.xzh.messageprovider.config.Config;
 import com.xzh.messageprovider.sender.MailsSender;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;

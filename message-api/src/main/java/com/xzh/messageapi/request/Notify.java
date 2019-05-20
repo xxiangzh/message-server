@@ -1,5 +1,6 @@
 package com.xzh.messageapi.request;
 
+import com.xzh.messageapi.enums.SendType;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,6 +10,7 @@ import java.io.Serializable;
 
 /**
  * 通知
+ *
  * @author 向振华
  * @date 2019/05/17 15:17
  */
@@ -17,6 +19,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Notify implements Serializable {
     private static final long serialVersionUID = 4853617398753548192L;
+
+    @ApiModelProperty(value = "发送类型",required = true)
+    private SendType sendType;
 
     @ApiModelProperty(value = "接收者",required = true)
     private String receiver;
