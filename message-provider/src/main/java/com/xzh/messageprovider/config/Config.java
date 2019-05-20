@@ -24,4 +24,7 @@ public class Config {
     private String mailUsername;
     @Value("${mail.recevicer}")
     private String mailRecevicer;
+
+    @Value("${xzh}")
+    private String xzh;
 }
