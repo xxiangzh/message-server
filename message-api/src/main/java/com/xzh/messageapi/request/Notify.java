@@ -21,7 +21,7 @@ public class Notify implements Serializable {
     private static final long serialVersionUID = 4853617398753548192L;
 
     @ApiModelProperty(value = "发送类型",required = true)
-    private SendType sendType;
+    private Integer sendType;
 
     @ApiModelProperty(value = "接收者",required = true)
     private String receiver;
